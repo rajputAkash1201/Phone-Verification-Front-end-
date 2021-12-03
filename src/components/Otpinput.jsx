@@ -9,7 +9,6 @@ class Otpinput extends React.Component {
         this.state = { value: '', otp1: "", otp2: "", otp3: "", otp4: "", otp5: "", otp6: "", disable: true };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-
     }
 
     handleChange(value1, event) {
@@ -22,7 +21,7 @@ class Otpinput extends React.Component {
     }
 
     inputfocus = (elmnt) => {
-        if (elmnt.key === "Delete" || elmnt.key === "Backspace" || elmnt.key === "Leftarrow") {
+        if (elmnt.key === "Delete" || elmnt.key === "Backspace") {
             const next = elmnt.target.tabIndex - 2;
             if (next > -1) {
 
